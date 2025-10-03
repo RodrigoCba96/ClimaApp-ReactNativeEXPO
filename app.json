@@ -4,7 +4,7 @@
     "slug": "primer-proyecto",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/clima-icon.png",
     "scheme": "primerproyecto",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
