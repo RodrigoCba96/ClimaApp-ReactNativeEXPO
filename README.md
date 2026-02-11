@@ -1,51 +1,47 @@
-# Welcome to your Expo app 👋
+Clima-App | React Native & TypeScript 🌦️
+Aplicación móvil de alto rendimiento para la consulta meteorológica global, construida con React Native y el ecosistema Expo. El proyecto destaca por un uso intensivo de TypeScript (85.5%) para garantizar la seguridad de tipos y una arquitectura modular basada en componentes y hooks personalizados.
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+🛠️ Stack Tecnológico
+Frontend: React Native (Expo SDK).
 
-## Get started
+Lenguaje: TypeScript (Tipado estricto para modelos de datos).
 
-1. Install dependencies
+Routing: File-based routing (directorio /app).
 
-   ```bash
-   npm install
-   ```
+API: Integración con OpenWeather API (Current Weather & Geocoding).
 
-2. Start the app
+Herramientas: ESLint para calidad de código y TSConfig optimizado.
 
-   ```bash
-   npx expo start
-   ```
+🏗️ Arquitectura y Código
+El proyecto sigue una estructura organizada para facilitar la escalabilidad:
 
-In the output, you'll find options to open the app in a
+/components: UI Components reutilizables y modulares.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+/hooks: Lógica de estado y efectos extraída para mayor limpieza en las vistas.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+/api: Capa de servicios con manejo de peticiones asíncronas y normalización de datos.
 
-## Get a fresh project
+Destacado Técnico: Consumo de API
+He implementado una capa de servicios robusta que incluye:
 
-When you're ready, run:
+- Interfaces Estrictas: Definición de WeatherData y CityResult para asegurar que el flujo de datos sea predecible.
 
-```bash
-npm run reset-project
-```
+- Manejo de Errores: Captura detallada de errores HTTP y respuestas fallidas de la API.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- Geolocalización: Soporte para búsqueda por nombre de ciudad y por coordenadas geográficas (lat/lon).
 
-## Learn more
+✨ Funcionalidades Clave
+- Búsqueda Inteligente: Autocompletado y búsqueda de hasta 6 ciudades simultáneas mediante la API de Geocoding.
 
-To learn more about developing your project with Expo, look at the following resources:
+- Datos en Tiempo Real: Visualización de temperatura (actual/sensación térmica), humedad, viento y descripción climática localizada al español.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- UI Dinámica: Los iconos y descripciones se renderizan dinámicamente según la respuesta del servidor.
 
-## Join the community
+🚀 Instalación y Despliegue
+Clona el repositorio.
 
-Join our community of developers creating universal apps.
+- Instala las dependencias: npm install.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-# proyect-test
+- Configura tu config.ts con la OPENWEATHER_API_KEY.
+
+- Inicia el entorno: npx expo start.
